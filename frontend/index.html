@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Splitter & Merger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>PDF Splitter & Merger</h1>
+    
+    <h2>Split PDF</h2>
+    <input type="file" id="splitFile" accept="application/pdf">
+    <input type="text" id="splitPages" placeholder="Enter page numbers (e.g., 1,3,5)">
+    <button onclick="splitPDF()">Split</button>
+    <p id="splitResult"></p>
+    
+    <h2>Merge PDFs</h2>
+    <input type="file" id="mergeFiles" accept="application/pdf" multiple>
+    <button onclick="mergePDFs()">Merge</button>
+    <p id="mergeResult"></p>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
